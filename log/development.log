@@ -1024,3 +1024,20 @@ Processing by LivrosController#index as HTML
 Completed 200 OK in 57ms (Views: 52.1ms | ActiveRecord: 0.8ms | Allocations: 44743)
 
 
+Started GET "/" for 127.0.0.1 at 2023-05-05 01:19:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LivrosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering livros/index.html.erb within layouts/application
+  [1m[36mLivro Load (0.1ms)[0m  [1m[34mSELECT "livros".* FROM "livros"[0m
+  ↳ app/views/livros/index.html.erb:6
+  Rendered livros/_livro.html.erb (Duration: 0.4ms | Allocations: 281)
+  Rendered livros/_livro.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered livros/_livro.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered livros/_livro.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered livros/_livro.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered livros/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 8073)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 40736)
+Completed 200 OK in 49ms (Views: 44.2ms | ActiveRecord: 0.4ms | Allocations: 44605)
+
+
